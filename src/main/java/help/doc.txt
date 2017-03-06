@@ -1,0 +1,10 @@
+
+//step 1: 安装eclipse 插件 
+
+
+
+//帮助文档
+
+http://www.tuicool.com/articles/Bzmm6b
+
+http://generator.sturgeon.mopaas.com/configreference/classPathEntry.html

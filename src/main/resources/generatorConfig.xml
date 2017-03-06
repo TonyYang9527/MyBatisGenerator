@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="C:/Users/Administrator/Desktop/MyBatisGenerator/src/main/java/help/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" />
+
+	<context id="Mysql" targetRuntime="MyBatis3">
+		<plugin type="plugin.PaginationPlugin" />
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/test" userId="root"
+			password="root" />
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<!-- Entiy.java *Example.java -->
+		<javaModelGenerator targetPackage="com.cell.user.dao.entiy"
+			targetProject="MyBatisGenerator\src\main\java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<!-- Mapper.xml -->
+		<sqlMapGenerator targetPackage="sqlmap"
+			targetProject="MyBatisGenerator\src\main\resources">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<!-- Mapper.java -->
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.cell.user.dao.mapper" targetProject="MyBatisGenerator\src\main\java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<!-- Tables -->
+		<table tableName="role" domainObjectName="Role" />
+	</context>
+</generatorConfiguration>
