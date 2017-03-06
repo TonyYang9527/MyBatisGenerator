@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
 	<classPathEntry
-		location="C:/Users/Administrator/Desktop/MyBatisGenerator/src/main/java/help/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" />
+		location="C:/Users/Administrator/git/MyBatisGenerator/src/main/java/help/mysql-connector-java/5.1.6/mysql-connector-java-5.1.6.jar" />
 
 	<context id="Mysql" targetRuntime="MyBatis3">
 		<plugin type="plugin.PaginationPlugin" />
