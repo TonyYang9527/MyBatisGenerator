@@ -15,3 +15,12 @@ https://getkong.org/about/
 http://orange.sumory.com/docs/
 
 http://blog.csdn.net/discoveryunknown/article/details/56666915
+
+
+
+
+
+
+微服务架构中的身份验证问题 ：JSON Web Tokens( JWT)
+
+http://blog.csdn.net/a82793510/article/details/53509427
